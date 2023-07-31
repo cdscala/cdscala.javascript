@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import './nav.css';
+@import './footer.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url('../assets/img/fondoNumeros.jpg');
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.cs-hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs-hero-section .cs-logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.cs-hero-section .cs-sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #090909;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.cs-product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.cs-product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.cs-product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.cs-product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.cs-product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 650px;
+    margin-right: 40px;
+}
+
+.cs-product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.cs-product-thumb{
+    width: 100%;
+    height: 350px;
+    
+    object-fit: contain;
+}
+
+.cs-discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.cs-card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.cs-product-card:hover .cs-card-btn{
+    opacity: 1;
+}
+
+.cs-card-btn:hover{
+    background: #efefef;
+}
+
+.cs-product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.cs-product-brand{
+    text-transform: uppercase;
+}
+
+.cs-product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.cs-price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.cs-actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.cs-pre-btn, .cs-nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.cs-pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.cs-nxt-btn{
+    right: 0;
+}
+
+.cs-pre-btn img, .cs-nxt-btn img{
+    opacity: 0.2;
+    height: 50px;
+}
+
+.cs-pre-btn:hover img, .cs-nxt-btn:hover img{
+    opacity: 1;
+}
+
+.cs-collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.cs-collection{
+    position: relative;
+}
+
+.cs-collection img{
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cs-collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.cs-collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}

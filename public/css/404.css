@@ -1,0 +1,19 @@
+.cs-four-0-four{
+    background-color: #fff;
+}
+
+.cs-four-0-four-image{
+    max-height: 50vh;
+    display: block;
+    margin: 60px auto;
+}
+
+.cs-four-0-four-msg{
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+
+.cs-four-0-four-msg a{
+    color: #383838;
+}

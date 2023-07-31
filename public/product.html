@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/product.css">
+    <link href="./css/calculator.css" rel="stylesheet">
+    <script src="./js/calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Productos</title>
+</head>
+<body>
+    <nav class="cs-navbar"></nav>
+    <calculator-component></calculator-component>
+    <section class="cs-product-details">
+        <div class="cs-image-slider">
+            <div class="cs-product-images">
+                <img src="./assets/img/pantalon.jpg" class="active" alt="">
+                <img src="./assets/img/pantalon.jpg" alt="">
+                <img src="./assets/img/pantalon.jpg" alt="">
+                <img src="./assets/img/pantalon.jpg" alt="">
+            </div>
+        </div>
+        <div class="cs-details">
+            <h2 class="cs-product-brand">calvin klein</h2>
+            <p class="cs-product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <span class="cs-product-price">$99</span>
+            <span class="cs-product-actual-price">$200</span>
+            <span class="cs-product-discount">( 50% off )</span>
+            <p class="cs-product-sub-heading">select size</p>
+            <input type="radio" name="size" value="s" checked hidden id="s-size">
+            <label for="s-size" class="cs-size-radio-btn check">s</label>
+            <input type="radio" name="size" value="m" hidden id="m-size">
+            <label for="m-size" class="cs-size-radio-btn">m</label>
+            <input type="radio" name="size" value="l" hidden id="l-size">
+            <label for="l-size" class="cs-size-radio-btn">l</label>
+            <input type="radio" name="size" value="xl" hidden id="xl-size">
+            <label for="xl-size" class="cs-size-radio-btn">xl</label>
+            <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+            <label for="xxl-size" class="cs-size-radio-btn">xxl</label>
+    
+            <button class="cs-btn cs-cart-btn">add to cart</button>
+            <button class="cs-btn">add to wishlist</button>
+        </div>
+    </section>
+    <section class="cs-detail-des">
+        <h2 class="cs-heading">description</h2>
+        <p class="cs-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ...</p>
+    </section>
+    <footer></footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/productMgt.js"></script>
+</body>
+</html>
